@@ -19,5 +19,19 @@ module.exports = {
         } catch (err) {
             throw new TypeError(err);
         }
-    }
+    },
+ ,
+    tdk: async function(yazi) {
+        if(!yazi) throw new TypeError('Lütfen bir kelime gir.')
+           try {
+            const { body } = await request.get("https://sozluk.gov.tr/gts?ara="+yazi.toLowerCase());
+            if(body === "error") {
+                return true
+                }else{
+                    return false
+                    }
+        } catch (err) {
+            throw new TypeError(err);
+        }
+    }   
  }
