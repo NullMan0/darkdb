@@ -37,8 +37,9 @@ module.exports = {
     tdk: async function(yazi) {
         if(!yazi) throw new TypeError('Lütfen bir kelime gir.')
  
-const body = await request.get("https://sozluk.gov.tr/gts?ara="+yazi)
-if(body.data.error) {
+
+const body = await request.get("https://www.nullman.tk/api/tdk/"+yazi)
+if(body.data.false) {
   return false
 }else{
   return true
