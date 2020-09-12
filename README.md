@@ -5,7 +5,7 @@
 ## Fonksiyonlar!
 
 - sifre : Rastgele Şifre Oluşturur
-- kekoyaz : Girilen Yazıyı Keko Bir Şekilde Yazar
+- kekoyazi : Girilen Yazıyı Keko Bir Şekilde Yazar
 - tdk : Girilen Kelime TDK da varmı yokmu bakar
 
 ### Örnek ;
