@@ -10,7 +10,7 @@
 
 ### Örnek ;
 ```js
-const nullapi = require("nullapi")
+const nullapi = require("null-api")
 
 console.log(await nullapi.tdk("Elma"))
 ```
